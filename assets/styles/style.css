@@ -1,0 +1,115 @@
+@import "./bootstrap-5.0.2-dist/css/bootstrap.css";
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap');
+
+:root{
+    --orange: hsl(31, 77%, 52%);
+    --d-cyan: hsl(184, 100%, 22%);
+    --vd-cyan: hsl(179, 100%, 13%);
+    --t-white: hsla(0, 0%, 100%, 0.75);
+    --vl-gray: hsl(0, 0%, 95%);
+    --font: 15px;
+} 
+
+.bg-orange{
+    background-color: var(--orange);
+}
+
+.bg-d-cyan{
+    background-color: var(--d-cyan);
+}
+
+.bg-vd-cyan{
+    background-color: var(--vd-cyan);
+}
+
+.bg-vl-gray{
+    background-color: var(--vl-gray);
+}
+
+.text-t-white{
+    color: var(--t-white);
+}
+
+body{
+    font-size: var(--font);
+}
+
+main{
+    margin-top: 5rem;
+}
+
+.sedan .suv .luxury{
+    width: 20%;
+}
+
+img{
+    margin-bottom: 2rem;
+}
+
+h1{
+    color: var(--vl-gray);
+    font-family: 'Big Shoulders Display', cursive;
+}
+
+p, button{
+    font-family: 'Lexend Deca', sans-serif;
+}
+
+.card-body{
+    margin-bottom: 4.5rem;
+}
+
+.card{
+    border: none !important;
+    border-radius: 0px !important;
+    -webkit-border-radius: 0px !important;
+    -moz-border-radius: 0px !important;
+    -ms-border-radius: 0px !important;
+    -o-border-radius: 0px !important;
+}
+
+.card-header, .card-footer{
+    border: 0px !important;
+    background-color: transparent !important;
+}
+
+button{
+    background-color: var(--vl-gray) !important;
+    border-radius: 100px !important;
+    -webkit-border-radius: 100px !important;
+    -moz-border-radius: 100px !important;
+    -ms-border-radius: 100px !important;
+    -o-border-radius: 100px !important;
+    width: 60%;
+    font-weight: 400;
+}
+
+@media (max-width: 992px){
+    button{
+        width: auto;
+    }
+}
+
+.sedb{
+    color: var(--orange);
+}
+
+.suvb{
+    color: var(--d-cyan);
+}
+
+.luxb{
+    color: var(--vd-cyan);
+}
+
+button:hover{
+    background-color: transparent !important;
+    color: var(--vl-gray) !important;
+    border: 1px solid var(--vl-gray) !important;
+}
+
+@media (max-width: 576px){
+    /* .sedan .suv .luxury{
+        padding: 1rem !important;
+    } */
+}
