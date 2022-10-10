@@ -36,10 +36,40 @@ body{
 
 main{
     margin-top: 5rem;
+    flex-direction: row;
 }
 
-.sedan .suv .luxury{
-    
+.sedan, .suv, .lux{
+    padding: 3rem 4rem 2rem 2rem !important;
+    max-width: 70% !important;
+}
+
+p{
+    font-size: 18px !important;
+}
+
+.suv{
+    border-radius: 0px!important;
+    -webkit-border-radius: 0px!important;
+    -moz-border-radius: 0px!important;
+    -ms-border-radius: 0px!important;
+    -o-border-radius: 0px!important;
+}
+
+.sedan{
+    border-radius: 10px 0 0 10px !important;
+    -webkit-border-radius: 10px 0 0 10px !important;
+    -moz-border-radius: 10px 0 0 10px !important;
+    -ms-border-radius: 10px 0 0 10px !important;
+    -o-border-radius: 10px 0 0 10px !important;
+}
+
+.lux{
+    border-radius: 0 10px 10px 0!important;
+    -webkit-border-radius: 0 10px 10px 0!important;
+    -moz-border-radius: 0 10px 10px 0!important;
+    -ms-border-radius: 0 10px 10px 0!important;
+    -o-border-radius: 0 10px 10px 0!important;
 }
 
 img{
@@ -61,11 +91,6 @@ p, button{
 
 .card{
     border: none !important;
-    border-radius: 0px !important;
-    -webkit-border-radius: 0px !important;
-    -moz-border-radius: 0px !important;
-    -ms-border-radius: 0px !important;
-    -o-border-radius: 0px !important;
 }
 
 .card-header, .card-footer{
@@ -88,6 +113,15 @@ button{
     button{
         width: auto;
     }
+
+    p{
+        font-size: 15px !important;
+    }
+
+    .sedan, .suv, .lux{
+        padding: 2rem 2rem 2rem 2rem !important;
+        max-width: 100% !important;
+    }
 }
 
 .sedb{
@@ -108,8 +142,8 @@ button:hover{
     border: 1px solid var(--vl-gray) !important;
 }
 
-@media (max-width: 576px){
-    /* .sedan .suv .luxury{
-        padding: 1rem !important;
-    } */
+@media (max-width: 686px){
+    main{
+        flex-direction: column !important;
+    }
 }
